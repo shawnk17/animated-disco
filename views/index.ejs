@@ -1,6 +1,20 @@
-< % include patials/head %> 
-  <body>
+<% include partials/head %>
+
     <h1><%= title %></h1>
     <p>Welcome to <%= title %></p>
-  </body>
-</html>
+    <p>By <%= author %></p>
+    <p>DataSource: <%= dataSource %></p>
+    <p>Number of Posts: <%= postCount %></p>
+
+    <main>
+      <% for(var i = 0; i < posts.length; i++){ %>
+        <article>
+          <h1><a href="/post/<%= posts[i].permalink %>"><%= posts[i].title %></a></h1>
+          <div>
+            <%- posts[i].postContent %>
+          </div>
+        </article>
+      <% } %>
+    </main>
+
+<% include partials/foot %>

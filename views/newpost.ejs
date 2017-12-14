@@ -1,0 +1,24 @@
+<% include partials/head %>
+
+    <form action="/newpost" method="POST">
+        <div>
+            <label for="title">Title</label>
+            <input type="text" id="title" name="title">
+        </div>
+        <div>
+            <label for="permalink">Permalink</label>
+            <input type="text" id="permalink" name="permalink">
+        </div>
+        <div>
+            <label for="author">Author</label>
+            <input type="text" id="author" name="author">
+        </div>
+        <div>
+            <label for="postContent">Post Content</label>
+            <textarea id="postContent" name="postContent" rows="20"></textarea>
+        </div>
+    
+        <button type="submit">Save Post</button>
+    </form>
+
+<% include partials/foot %>
