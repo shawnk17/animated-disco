@@ -1,6 +1,6 @@
 <% include partials/head %>
 
-<!-- <form action="/newpost" method="POST">
+<form action="/newpost" method="POST">
 <div>
     <label></label>
 </div>
@@ -52,12 +52,9 @@
         <label for="exampleFormControlTextarea1">Addtional Notes</label>
         <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
     </div>
-    <div>
-        <label for="passphrase">Passphrase</label>
-        <input type="password" id="passphrase" name="passphrase">
-    </div>
+    
     <button class="btn btn-danger navbar-btn" type="submit">Submit</button>
-</form> -->
+
 
   <form action="/newpost" method="POST">
         <div>
@@ -76,7 +73,10 @@
             <label for="postContent">Post Content</label>
             <textarea id="postContent" name="postContent" rows="20"></textarea>
         </div>
-    
+        <div>
+            <label for="passphrase">Passphrase</label>
+            <input type="password" id="passphrase" name="passphrase">
+        </div>
         <button type="submit">Save Post</button>
     </form>
 

@@ -11,6 +11,7 @@ var index = require('./routes/index');
 var users = require('./routes/users');
 var about = require('./routes/about');
 var blog = require('./routes/blog');
+var newpost = require('./routes/newPost');
 var app = express();
 
 // view engine setup
@@ -29,6 +30,7 @@ app.use('/blog', blog);
 app.use('/about', about);
 app.use('/', index);
 app.use('/users', users);
+app.use('/newpost', newpost);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
