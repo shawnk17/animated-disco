@@ -1,0 +1,18 @@
+form{
+    margin: o auto;
+    width: auto;
+    padding: .45rm;
+
+    font-family: 'Cormorant Unicase', serif;
+ 
+    border: 1px dotted purple;
+    border-radius: 0;
+
+    margin-bottom: 3%;
+    
+}
+
+footer{
+    clear: both;
+    background-color:palegoldenrod;
+}

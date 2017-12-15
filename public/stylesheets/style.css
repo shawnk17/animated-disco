@@ -1,10 +1,25 @@
 @import url('https://fonts.googleapis.com/css?family=Slabo+27px');
 
 body {
+  background-color: rgba(173, 219, 230, 0.233);
+
   padding: 50px;
   font-family: 'Slabo 27px', serif;
 }
 
 a {
   color: #00B7FF;
+}
+
+div {
+    margin: 1rem 0;
+}
+
+.nounderline:hover {
+    text-decoration: none;
+}
+
+footer{
+    clear: both;
+    background-color:palegoldenrod;
 }
