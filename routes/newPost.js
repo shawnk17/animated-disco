@@ -19,8 +19,24 @@ router.post("/", (req, res, next) => {
 
         repo.addPost(newPost);
     }
-
     res.redirect("/");
 });
+
+// res.render('/.edit').click(function(){
+//     (this).hide();
+//     ('/.box').addClass('editable');
+//     ('/.text').attr('contenteditable', 'true');  
+//     ('/.save').show();
+//     res.redirect("/");
+//   });
+  
+//   res.render('.save').click(function(){
+//     (this).hide();
+//     ('/.box').removeClass('editable');
+//     ('/.text').removeAttr('contenteditable');
+//     ('/.edit').show();
+//     res.redirect("/");
+//   });
+  
 
 module.exports = router;
