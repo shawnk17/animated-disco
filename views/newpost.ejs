@@ -1,66 +1,11 @@
 <% include partials/head %>
-
-<form action="/newpost" method="POST">
-<div>
-    <label></label>
-</div>
-    <div>
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="user_name">
-    </div>
-    <div class="form-group">
-        <label for="exampleFormControlInput1">Email address</label>
-        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-    </div>
     
-    <div class="form-group">
-        <label for="exampleFormControlSelect1">Week Day</label>
-        <select class="form-control" id="exampleFormControlSelect1">
-            <option>Monday</option>
-            <option>Tuesday</option>
-            <option>Wensday</option>
-            <option>Thursday</option>
-            <option>Friday</option>
-        </select>
-    </div>
-
-    <div class="form-group">
-        <label for="exampleFormControlSelect2">Meeting times</label>
-        <select multiple class="form-control" id="exampleFormControlSelect2">
-            <option>9 am</option>
-            <option>10 am</option>
-            <option>11 am</option>
-            <option>1 pm</option>
-            <option>2 pm</option>
-        </select>
-    </div>
-
-    <div class="form-check form-check-inline">
-        <h5>Let us now if you use the note section</h5>
-        <label class="form-check-label">
-            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">Yes
-        </label>
-    </div>
-
-    <div class="form-check form-check-inline">
-        <label class="form-check-label">
-            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">No
-        </label>
-    </div>
-
-    <div class="form-group">
-        <label for="exampleFormControlTextarea1">Addtional Notes</label>
-        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-    </div>
-    
-    <button class="btn btn-danger navbar-btn" type="submit">Submit</button>
-
-
   <form action="/newpost" method="POST">
         <div>
             <label for="title">Title</label>
             <input type="text" id="title" name="title">
         </div>
+        
         <div>
             <label for="permalink">Permalink</label>
             <input type="text" id="permalink" name="permalink">
@@ -73,12 +18,13 @@
             <label for="postContent">Post Content</label>
             <textarea id="postContent" name="postContent" rows="20"></textarea>
         </div>
+        
         <div>
             <label for="passphrase">Passphrase</label>
             <input type="password" id="passphrase" name="passphrase">
         </div>
-        <button type="submit">Save Post</button>
+        <button class="btn btn-danger navbar-btn"  type="submit">Save Post</button>
+        
     </form>
-
 
 <% include partials/foot %>
