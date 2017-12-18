@@ -4,6 +4,14 @@
         <div class="row">
             <main class="col-md-8">
                 <main>
+                        <% for(var i = 0; i < posts.length; i++){ %>
+                            <article>
+                              <h1><a href="/post/<%= posts[i].permalink %>"><%= posts[i].title %></a></h1>
+                              <div>
+                                <%- posts[i].postContent %>
+                              </div>
+                            </article>
+                          <% } %>
                     <article>
                         <h1>Bbllooggiinngg</h1>
                         <br>

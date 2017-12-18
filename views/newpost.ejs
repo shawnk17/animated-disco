@@ -15,14 +15,7 @@
             <input type="text" id="author" name="author">
         </div>
         <h3>Create Post</h3>
-        <!-- <div class="box">
-  <span class="edit">edit</span>
-  <span class="save">save</span>
-  <div class="text">
-    Hover this box and click on edit! - You can edit me then.
-    <br>When you finished - click save and you saved it.
-    </div>
-</div> -->
+
         <div>
             <label for="postContent">Post Content</label>
             <textarea id="postContent" name="postContent" rows="20"></textarea>
@@ -37,6 +30,14 @@
     </form>
 
     <script src="/javascripts/tinymce/tinymce.min.js"></script>
-    <script>tinymce.init({ selector:'textarea' });</script>
+    <script type="text/javascript">
+    tinymce.init({
+      selector: "textarea",  // change this value according to your HTML
+      plugins: "image",
+  menubar: "insert",
+  toolbar: 'image undo redo styleselect bold italic alignleft aligncenter alignright bullist numlist outdent indent code',
+
+    });
+    </script>
 
     <% include partials/foot %>
