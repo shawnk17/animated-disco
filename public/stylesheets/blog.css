@@ -1,10 +1,11 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
 body {
     font-size: 100%;
     margin: o;
     padding: 1rem;
     font-family: 'Open Sans', sans-serif;
 }
-@import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
 ul.topnav {
     list-style-type: none;
