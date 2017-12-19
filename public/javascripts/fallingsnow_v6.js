@@ -151,8 +151,8 @@ function moveSnowflakes() {
         for (var i = 0; i < snowflakes.length; i++) {
             var snowflake = snowflakes[i];
 
-            snowflake.xPos = getPosition(50, browserWidth);
-            snowflake.yPos = getPosition(50, browserHeight);
+            snowflake.xPos = getPosition(150, browserWidth);
+            snowflake.yPos = getPosition(150, browserHeight);
         }
 
         resetPosition = false;

@@ -31,13 +31,18 @@
 
     <script src="/javascripts/tinymce/tinymce.min.js"></script>
     <script type="text/javascript">
-    tinymce.init({
-      selector: "textarea",  // change this value according to your HTML
-      plugins: "image",
-  menubar: "insert",
-  toolbar: 'image undo redo styleselect bold italic alignleft aligncenter alignright bullist numlist outdent indent code',
+        tinymce.init({
+            selector: "textarea",  // change this value according to your HTML
+            plugins: "image",
 
-    });
+            max_height: 500,
+            max_width: 500,
+            min_height: 100,
+            min_width: 400,
+            // menubar: "insert",
+            // toolbar: 'image undo redo styleselect bold italic alignleft aligncenter alignright bullist numlist outdent indent code',
+
+        });
     </script>
 
     <% include partials/foot %>
