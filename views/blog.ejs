@@ -3,15 +3,7 @@
     <div class="container">
         <div class="row">
             <main class="col-md-8">
-                <main>
-                        <% for(var i = 0; i < posts.length; i++){ %>
-                            <article>
-                              <h1><a href="/post/<%= posts[i].permalink %>"><%= posts[i].title %></a></h1>
-                              <div>
-                                <%- posts[i].postContent %>
-                              </div>
-                            </article>
-                          <% } %>
+                <main>                      
                     <article>
                         <h1>Bbllooggiinngg</h1>
                         <br>
@@ -27,22 +19,17 @@
                             by working in a real development environment.
                         </p>
                     </article>
-                    <article>
-                        <h2>This is my Second Article!</h2>
-                        <p>Learn new codes</p>
-                        <p>
-                            Now a day the the compute tcode change so offten that you have to keep learing new one each and evry doy.
-                        </p>
-                    </article>
-                    <article>
-                        <h2>This is my Third Article!</h2>
-                        <p>SmartDevices</p>
-                        <p>
-                            The search for a new smartphone and or works statation is changes monthly.
-                        </p>
-                    </article>
+                    <% for(var i = 0; i < posts.length; i++){ %>
+                        <article>
+                          <h1><a href="/post/<%= posts[i].permalink %>"><%= posts[i].title %></a></h1>
+                          <div>
+                            <%- posts[i].postContent %>
+                          </div>
+                        </article>
+                      <% } %>
                 </main>
             </main>
+            
             <aside class="col-md-4">
                 <article id="side">
                     <h2>Tech Quotes</h2>
