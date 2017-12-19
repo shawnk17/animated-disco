@@ -42,9 +42,10 @@ main {
 aside {
     background-color: lightyellow;
     align-self: auto;
-    height: 1rm;
-    width: 1rm;
+    height: 14%;
+    width: 14%;
 }
+    
 
 img {
     max-width: 100%;
