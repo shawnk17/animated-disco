@@ -19,8 +19,9 @@
                             by working in a real development environment.
                         </p>
                     </article>
-                    <% for(var i = 0; i < posts.length; i++){ %>
-                        <article>
+
+                    <article>
+                        <% for(var i = 0; i < posts.length; i++){ %>
                             <h1>
                                 <a href="/post/<%= posts[i].permalink %>">
                                     <%= posts[i].title %>
@@ -29,8 +30,9 @@
                             <div>
                                 <%- posts[i].postContent %>
                             </div>
-                        </article>
-                        <% } %>
+                            <% } %>
+                    </article>
+
                 </main>
             </main>
 
@@ -80,6 +82,12 @@
             Linkedinn
             <br>
 
+            <span class="fa-stack fa-lg">
+                <a class="nounderline" href="https://github.com/shawnk17">
+                <span class="fa fa-spin ffa-git-square"></span>
+                </a> --</span>
+            GitHub
+            <br>
         </div>
     </aside>
 
